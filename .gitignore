@@ -1,0 +1,13 @@
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.swp
+*.swo
+*.vrb
+_minted-*
+.ipynb_checkpoints/
+.~lock*
+*odg
