@@ -10,7 +10,16 @@ to build just run::
 
   % pdflatex -shell-escape qiskit_changes.tex
 
-the output will be qiskit_changes.pdf
+the output will be ``qiskit_changes.pdf``
+
+================
+Pre-compiled pdf
+================
+
+A pre-compiled version of the pdf is included in this repo and updated
+when the tex source is. This can be found here:
+
+https://github.com/mtreinish/qiskit-changes-2021/blob/main/qiskit_changes.pdf
 
 =======
 License
