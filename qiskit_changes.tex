@@ -68,6 +68,7 @@
     \texorpdfstring{%
         \centering
         Matthew Treinish\\
+        \href{https://github.com/mtreinish/qiskit-changes-2021}{https://github.com/mtreinish/qiskit-changes-2021}
    }
    {Matthew Treinish}
 }
@@ -106,8 +107,9 @@
         \column{0.5\textwidth}
             \begin{itemize}
                 \item Qiskit native binary serialization format for QuantumCircuit
-                \item Designed to be backwards compatible moving forward (new Qiskit can always load old QPY files)
-                \item 
+                \item Fast serialization and deserialization for saving and
+                    transfering an arbitrary number of circuits
+                \item Designed to be backwards compatible moving forward (new Qiskit version can always load old QPY files generated with an older Qiskit version)
             \end{itemize}
         \column{0.5\textwidth}
             \inputminted[fontsize=\tiny]{python}{qpy_demo.py}
@@ -121,9 +123,12 @@
         \column{0.5\textwidth}
             \begin{itemize}
                 \item Making continual improvements to Qiskit's interface with
-                    backends
-                \item Now designed to be hardware and vendor agnostic to enable
-                \item 
+                    hardware backends
+                \item Defined a versioned interface that enables the interface
+                    to change and grow in a controlled and stable/compatible
+                    manner as hardware needs change
+                \item Now designed to be hardware and vendor agnostic and to
+                    use Qiskit objects directly
             \end{itemize}
         \column{0.5\textwidth}
             \inputminted[fontsize=\tiny]{python}{backend_demo.py} 
@@ -136,7 +141,8 @@
     \frametitle{Control Flow}
     \begin{itemize}
         \item The next Qiskit release will add support for basic control flow
-        \item
+        \item If/else logic and for loops to start
+        \item Eventually grow to support the full feature set available in QASM3
     \end{itemize}
 \end{frame}
 
@@ -149,6 +155,19 @@
         \item Moving forward support for parsing OpenQASM3 into a QuantumCircuit
             object will be added in the future
     \end{itemize} 
+\end{frame}
+
+\section{Questions?}
+\begin{frame}
+\frametitle{Where to get more information}
+    \begin{itemize}
+        \item These Slides: \href{https://github.com/mtreinish/qiskit-changes-2021}{https://github.com/mtreinish/qiskit-changes-2021}
+        \item Blog post about Qiskit restructuring: \href{https://research.ibm.com/blog/qiskit-application-modules}{https://research.ibm.com/blog/qiskit-application-modules}
+        \item Qiskit Partners Documentation \href{https://qiskit.org/documentation/partners/}{https://qiskit.org/documentation/partners/}
+        \item Qiskit Runtime Documentation \href{https://quantum-computing.ibm.com/lab/docs/iql/runtime/}{https://quantum-computing.ibm.com/lab/docs/iql/runtime/}
+        \item Qiskit Runtime Programs \href{https://github.com/Qiskit-Partners/qiskit-runtime}{https://github.com/Qiskit-Partners/qiskit-runtime}
+        \item Qiskit Release Notes \href{https://qiskit.org/documentation/release\_notes.html}{https://qiskit.org/documentation/release\_notes.html}
+    \end{itemize}
 \end{frame}
 
 \end{document}
